@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Tailwind CSS</title>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.7/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Navbar Section -->
+  <nav x-data="{ open: false }" class="bg-white border-b border-gray-100 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <!-- Logo -->
+        <div class="shrink-0 flex items-center">
+          <img src="img/logo.png" class="h-8 w-auto block" alt="Logo" />
+          <span class="text-xl font-semibold ml-2 text-gray-800 hidden md:block">Edu Academy</span>
+        </div>
+
+        <!-- Hamburger Button (Mobile) -->
+        <div class="-mr-2 flex items-center md:hidden">
+          <button @click="open = ! open"
+            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path :class="{'hidden': open, 'inline-flex': ! open }" class="inline-flex" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              <path :class="{'hidden': ! open, 'inline-flex': open }" class="hidden" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu (Hamburger Toggle) -->
+    <div :class="{'block': open, 'hidden': ! open}" class="md:hidden bg-white border-t border-gray-100">
+      <div class="pt-2 pb-3 space-y-1">
+        <a href="/" class="block p-3 border-l-4 border-indigo-400 text-indigo-700 bg-indigo-50">Dashboard</a>
+        <a href="/users"
+          class="block p-3 border-l-4 border-transparent text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Users</a>
+        <a href="/settings"
+          class="block p-3 border-l-4 border-transparent text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Settings</a>
+      </div>
+    </div>
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex justify-center space-x-8">
+      <a href="/" class="text-gray-700 hover:text-gray-900 font-medium px-3 py-2">Dashboard</a>
+      <a href="/users" class="text-gray-700 hover:text-gray-900 font-medium px-3 py-2">Users</a>
+      <a href="/settings" class="text-gray-700 hover:text-gray-900 font-medium px-3 py-2">Settings</a>
+    </div>
+  </nav>
+
+  <!-- Main Content Section -->
+  <header class="bg-white shadow mt-20 sm:mt-24 lg:mt-32"> <!-- Margin-top lebih besar pada mobile dan desktop -->
+    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+      <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+        Selamat datang di Edukasi Code Academy
+      </h2>
+    </div>
+  </header>
+
+  <main>
+    <div class="py-6">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="bg-white overflow-hidden shadow-sm rounded-md sm:rounded-lg">
+          <img src="img/dashboard.png" alt="Dashboard Image" />
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+/* Animasi untuk menghilang ke kiri dan muncul ke kanan */
+.partner-img {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 1; /* Pastikan gambar awal terlihat */
+    }
+    
+    .partner-img:hover {
+    transform: translateX(30px); /* Geser gambar ke kanan */
+    opacity: 1; /* Tetap terlihat saat hover */
+    }
+    
+    /* Hover effect yang lebih halus */
+    .partner-img:hover {
+    transform: translateX(30px) scale(1.1);
+    }
+    
+
+    <style>
+    /* Animasi untuk kursus */
+    .course-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .course-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .course-card img {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .course-card:hover img {
+        transform: scale(1.05);
+    }
+
+    /* Animasi untuk logo partners bergerak horizontal */
+    @keyframes marquee {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .animate-marquee {
+        animation: marquee 20s linear infinite;
+    }
+
+    .partners-logos img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .partners-logos img:hover {
+        transform: scale(1.1);
+        filter: brightness(1.2);
+    }
+
+    /* Animasi fade-in untuk hero section */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .hero h1, .hero p {
+        animation: fadeIn 1s ease-out forwards;
+    }
+
+    .hero img {
+        animation: fadeIn 1s ease-out 0.5s forwards;
+    }
+
+    /* Animasi slide-in untuk teks */
+    @keyframes slideIn {
+        0% {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    section .w-full h2, section .w-full p {
+        animation: slideIn 1s ease-out forwards;
+    }
+
+    section .w-full h2 {
+        animation-delay: 0.2s;
+    }
+
+    section .w-full p {
+        animation-delay: 0.4s;
+    }
+
+    /* Efek hover pada tombol */
+    button, a {
+        transition: all 0.3s ease;
+    }
+
+    button:hover, a:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    a:hover {
+        color: #5c6bc0;
+    }
+
+    /* Paralaks pada gambar */
+    @keyframes parallax {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-30px);
+        }
+    }
+
+    .hero img {
+        animation: parallax 3s infinite alternate;
+    }
+
+    /* Responsif untuk animasi */
+    @media screen and (max-width: 768px) {
+        .course-card img {
+            transform: none;
+        }
+
+        .animate-marquee {
+            animation: none;
+        }
+    }
+</style>
+
+
