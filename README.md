@@ -1,1 +1,11 @@
-# edukasicodeacademy
+# edukasicodeacademy![screencapture-localhost-projeck-2025-01-15-19_52_42](https://github.com/user-attachments/assets/4bcbdda8-c36d-41d2-9de5-4035ec2e2199)
+![screencapture-localhost-projeck-about-php-2025-01-15-19_53_06](https://github.com/user-attachments/assets/85829d91-4b4d-4db6-a561-a68b0cd8baba)
+![screencapture-localhost-projeck-services-php-2025-01-15-19_53_26](https://github.com/user-attachments/assets/99729a7a-d9fb-496a-a63f-2128d50dc384)
+![screencapture-localhost-projeck-services-php-2025-01-15-19_53_26 (1)](https://github.com/user-attachments/assets/713fb3b0-29f3-4fd5-a46d-34f06b37be66)
+![screencapture-localhost-projeck-services-php-2025-01-15-19_53_26 (2)](https://github.com/user-attachments/assets/65107048-38f4-449d-b668-f1898802411f)
+![screencapture-localhost-projeck-portfolio-php-2025-01-15-19_53_50](https://github.com/user-attachments/assets/57ae0002-f407-4404-b205-fe3fa29b178c)
+![screencapture-localhost-projeck-blog-php-2025-01-15-19_54_02](https://github.com/user-attachments/assets/49818990-2274-4afb-be3b-4f6a0803137c)
+![screencapture-localhost-projeck-contact-php-2025-01-15-19_54_23](https://github.com/user-attachments/assets/f4afdb55-04f7-415a-a45a-4073fa81da4c)
+![screencapture-localhost-projeck-login-php-2025-01-15-19_54_34](https://github.com/user-attachments/assets/e40bc32c-ef5a-4ffc-bd00-00c4af12766b)
+![screencapture-localhost-projeck-forget-php-2025-01-15-19_54_48](https://github.com/user-attachments/assets/609890c3-a556-40ea-9d22-9eb73f1a3aeb)
+![screencapture-localhost-projeck-register-php-2025-01-15-19_55_08](https://github.com/user-attachments/assets/2d083efa-9708-4bff-b80d-4eef149db35a)
